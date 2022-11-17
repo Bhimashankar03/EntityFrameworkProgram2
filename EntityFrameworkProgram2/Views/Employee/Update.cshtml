@@ -1,0 +1,22 @@
+﻿@model Employee
+
+<html>
+<head>
+	<title>
+	</title>
+</head>
+<body>
+	<form method="post" asp-action="Update" asp-controller="Employee">
+		Employee Id :
+		<input type="text" class="form-control" asp-for="@Model.EmpId" />
+		Employee Name :
+		<input type="text" class="form-control" asp-for="@Model.EmpName" />
+		Employee Address :
+		<input type="text" class="form-control" asp-for="@Model.Address" />
+		Employee Mail :
+		<input type="text" class="form-control" asp-for="@Model.EmpMail" />
+		<button class="btn btn-primary">Submit</button>
+	</form>
+</body>
+</html>
+
